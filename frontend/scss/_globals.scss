@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F4F9;
+    font-family: 'Kanit', sans-serif;
+    padding-bottom: 50px;
+    
+}
+.card{
+    border: none !important;
+    padding: 10px;
+    margin-bottom: 20px;
+    &.income {
+        height: auto;
+        width:100%;
+    }
+}
+.product {
+    height: auto;
+    width:100%;
+}
+.repair-list {
+    height:auto;
+    width:100%;
+}
+.history-manager {
+    .title-history-list{
+        border-left: 4px solid #00A3FF;
+        padding-left: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    height:auto;
+    width:100%; 
+    .time2 {
+    color:#00A3FF;
+    }
+    .stock{
+    color:#00A3FF;
+
+    }
+}
+.text-income {
+    font-size: 48px;
+    color: #FF5656;
+}
+.text-overdue{
+    font-size: 48px;
+    color: #FF9900;
+}
+.stock-income {
+    border-left: 4px solid #FF5656;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.stock-income {
+    color:#FF5656;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.text-repair {
+    font-size: 48px;
+    color: #FF5656;
+}
+.text-repairing {
+    font-size: 48px;
+    color: #FF9900;
+}
+.text-repair-today {
+    font-size: 48px;
+    color: #00A976;
+}
+.stock-repair {
+    border-left: 4px solid #FF5656;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.stock-repair2 {
+    color:#FF5656;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.pd {
+    border-left: 4px solid #FF9900;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;  
+}
+.pd2{
+    color:#FF9900;
+    display: inline-block;
+    margin-left: 8px;
+}
+.bb {
+    font-size: 36px;
+    font-weight: 700;
+    color:#000000;
+}
+.text-caim {
+    font-size: 48px;
+    color: #00A3FF;
+}
+.caim {
+    border-left: 4px solid #00A3FF;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;  
+}
+.caim2{
+    color:#00A3FF;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.title-repair-list {
+    border-left: 4px solid #00A976;
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+      
+}
+
+.table-repair-list {
+    font-size: 14px;
+    .time{
+        color: #00A976;
+    }
+    .repairing {
+        color:#FF9900;
+
+    }
+    .price{
+        color: #00A976;
+    }
+} 
+
+.bb {
+    font-size: 36px;
+    font-weight: 700;
+    color:#000000;
+}
+.soft{
+    font-size: 36px;
+    font-weight: 700;
+    color:#FF5656;
+}
+
+.nav-item {
+    margin-left: 18px;
+}
