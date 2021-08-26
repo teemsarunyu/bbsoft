@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- datatable  -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.0/css/jquery.dataTables.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="bb">BB</span><span class="soft">SOFT</span></a>
+
+          <div class="collapse navbar-collapse ms-1" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">สรุปภาพรวม</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">จัดการสินค้า</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">คลังสินค้า</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ข้อมูลงานซ่อม</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">จัดการบิล/ใบเสร็จ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">จัดการข้อมูลพนักงาน</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex">
+           <div class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#">ศรัญญู คูณปล้อง 
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#"><span class="badge bg-success">แอดมิน</span></a></li>
+                    <li><a class="dropdown-item" href="#">โปรไฟล์</a></li>
+                    <li><a class="dropdown-item" href="#">ประวัติการทำงาน</a></li>
+                    <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                  </ul>
+            </li>
+           </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="content">
+          <div class="container">
+              <h3 class="title-page mt-2 mb-4">สรุปภาพรวม</h3>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="card income">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-12 col-sm-6">
+                                    <p>รายได้ทั้งหมดวันนี้ / บาท</p>
+                                    <h3 class="text-income">123,456</h3>
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                    <p>รายได้ทั้งหมดเดือนนี้ / บาท</p>
+                                    <h3 class="text-income">2,000,000</h3>
+                                  </div>
+                              </div>
+                                <hr>
+                              <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <p>ค้างชำระ /  บาท</p>
+                                    <h3 class="text-overdue">0</h3>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <p class="mb-3">รายได้ทุกสาขาเดือนนี้ / บาท</p>
+                                    <span class="stock-income">สำนักงานใหญ่</span><span class="text-stock-income">1,500,000</span><br>
+                                    <span class="stock-income">รังสิต</span><span class="text-stock-income">500,000</span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="card repair">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                      <p>งานซ่อมทั้งหมดวันนี้ / รายการ</p>
+                                      <h3 class="text-repair">40</h3>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                      <p>กำลังดำเนินการซ่อม / รายการ </p>
+                                      <h3 class="text-repair">25</h3>
+                                    </div>
+                                </div>
+                                  <hr>
+                                <div class="row">
+                                  <div class="col-12 col-sm-6">
+                                      <p>ส่งเครื่องวันนี้ / รายการ</p>
+                                      <h3 class="text-repair-today">15</h3>
+                                  </div>
+                                  <div class="col-12 col-sm-6">
+                                      <p class="mb-3">งานซ่อมทั้งวันนี้ / รายการ</p>
+                                      <span class="stock-repair">สำนักงานใหญ่</span><span class="text-stock-repair">30</span><br>
+                                      <span class="stock-repair">รังสิต</span><span class="text-stock-repair">10</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                 </div>
+
+                 <!-- row2  -->
+                 <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 col-md-6 ">
+                                <div class="card product">
+                                    <div class="card-body">
+                                     <div class="row">
+                                        <div class="col-5">
+                                            <p>สินค้าใกล้หมด</p>
+                                            <h3 class="text-product-almost">15</h3>
+                                            <p>รายการ</p>
+                                         </div>
+                                         <div class="col-7">
+                                            <p class="mb-3">สาขา</p>
+                                            <span class="product-stock">สำนักงานใหญ่</span><span class="text-product-stock">7</span><br>
+                                            <span class="product-stock">รังสิต</span><span class="text-product-stock">3</span>
+                                         </div>
+                                     </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="card product">
+                                    <div class="card-body">
+                                     <div class="row">
+                                        <div class="col-5">
+                                            <p>สินค้าเครม</p>
+                                            <h3 class="text-caim">10</h3>
+                                            <p>รายการ</p>
+                                         </div>
+                                         <div class="col-7">
+                                            <p class="mb-3">สาขา</p>
+                                            <span class="product-caim">สำนักงานใหญ่</span><span class="text-product-caim">7</span><br>
+                                            <span class="product-caim">รังสิต</span><span class="text-product-caim">3</span>
+                                         </div>
+                                     </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card repair-list">
+                                    <div class="card-title d-flex justify-content-between mt-3">
+                                        <p class="title-repair-list">ข้อมูลงานซ่อม</p>
+                                        <a href="" class="btn btn-success"><i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                       <div class="table-repair-list">
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr align="center" class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #DFDFDF;">
+                                                    <td>
+                                                        <p>2021-01-01</p>
+                                                        <p class="repair-time" >10:00</p>
+                                                    </td>
+                                                    <td><p>คุณสมชาย</p></td>
+                                                    <td><p>iPad Pro</p></td>
+                                                    <td><p>เปิดไม่ติด</p></td>
+                                                   <td><p class="repair-status">กำลังดำเนินการ</p></td>
+                                                    <td><p class="repair-appraise">4500</p></td>
+                                                    <td>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center" class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #DFDFDF;">
+                                                    <td>
+                                                        <p>2021-01-01</p>
+                                                        <p class="repair-time" >10:00</p>
+                                                    </td>
+                                                    <td><p>คุณสมชาย</p></td>
+                                                    <td><p>iPad Pro</p></td>
+                                                    <td><p>เปิดไม่ติด</p></td>
+                                                   <td><p class="repair-status">กำลังดำเนินการ</p></td>
+                                                    <td><p class="repair-appraise">4500</p></td>
+                                                    <td>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center" class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #DFDFDF;">
+                                                    <td>
+                                                        <p>2021-01-01</p>
+                                                        <p class="repair-time" >10:00</p>
+                                                    </td>
+                                                    <td><p>คุณสมชาย</p></td>
+                                                    <td><p>iPad Pro</p></td>
+                                                    <td><p>เปิดไม่ติด</p></td>
+                                                   <td><p class="repair-status">กำลังดำเนินการ</p></td>
+                                                    <td><p class="repair-appraise">4500</p></td>
+                                                    <td>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center" class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #DFDFDF;">
+                                                    <td>
+                                                        <p>2021-01-01</p>
+                                                        <p class="repair-time" >10:00</p>
+                                                    </td>
+                                                    <td><p>คุณสมชาย</p></td>
+                                                    <td><p>iPad Pro</p></td>
+                                                    <td><p>เปิดไม่ติด</p></td>
+                                                   <td><p class="repair-status">กำลังดำเนินการ</p></td>
+                                                    <td><p class="repair-appraise">4500</p></td>
+                                                    <td>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center" class="d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #DFDFDF;">
+                                                    <td>
+                                                        <p>2021-01-01</p>
+                                                        <p class="repair-time" >10:00</p>
+                                                    </td>
+                                                    <td><p>คุณสมชาย</p></td>
+                                                    <td><p>iPad Pro</p></td>
+                                                    <td><p>เปิดไม่ติด</p></td>
+                                                    <td><p class="repair-status">กำลังดำเนินการ</p></td>
+                                                    <td><p class="repair-appraise">4500</p></td>
+                                                    <td>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                       </div>
+                                       <a href="#"class="more d-flex justify-content-center align-items-center">ดูทั้งหมด<i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="card history-management ">
+                        <div class="card-title d-flex justify-content-between mt-3">
+                            <p class="title-history-list">ประวัติการทำงาน</p>
+                            <a href="" class="btn btn-primary"><i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-body a">
+                           <div class="table-history-list">
+                            <table class="table table-borderless" id="example" class="display nowrap" style="width:100%">
+                                <tbody>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"></i>
+                                        </td>
+                                        <tbody class="collapse multi-collapse" id="multiCollapseExample1">
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatem animi ad. Possimus magnam nobis sapiente distinctio in, pariatur ut ex cum quia doloremque dicta, nulla aperiam debitis delectus at!</td>
+                                                
+                                        </tbody>
+                                    </tr>
+                                    <tr class="d-flex justify-content-between align-items-center text-center" style="border-bottom: 1px solid #DFDFDF;">
+                                        <td>
+                                            <p>2021-01-01</p>
+                                            <p class="management-time" >10:00</p>
+                                        </td>
+                                        <td><p>#INV0001</p></td>
+                                        <td><p>ออกใบเสร็จ</p></td>
+                                        <td><p>แอดมิน</p></td>
+                                        <td><p class="management-stock">สำนักงานใหญ่</p></td>
+                                        <td>
+                                            <i class="fas fa-chevron-down" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"></i>
+                                        </td>
+                                        <tbody class="collapse multi-collapse" id="multiCollapseExample2">
+                                                <td>
+                                                    <p>ราบละเอียด :</p>
+                                                    <p>ราบละเอียด :</p>
+                                                    <p>ราบละเอียด :</p>
+                                                    <p>ราบละเอียด :</p>
+                                                </td>
+                                        </tbody>
+                                    </tr>
+                                </tbody>
+                            </table>
+                           </div>
+                           <a href="#"class="more d-flex justify-content-center align-items-center">ดูทั้งหมด<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js"></script>
+
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "scrollX": true
+    } );
+} );
+</script>
+</body>
+</html>
