@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBSOFT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            background-color: rgb(19, 0, 49);
+            left: 0px;
+            top: 0px;
+            position: relative;
+            /* padding-top: 10px; */
+        }
+        .sidebar span {
+            color: azure;
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid azure;
+            padding: 10px 10px;
+            background-color: black;
+            border-block-start: 2px solid blue;
+            border-block-end: 2px solid blueviolet;
+        }
+        .user {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(75, 0, 196);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .user > p {
+            color: azure;
+            font-size: 1.25rem;
+        }
+    </style>
 </head>
 <body>
-    <h3>BBOSOFT</h3>
+    <div class="sidebar">
+        <span>BBSOFT</span>
+        <div class="user">
+            <p>Sarunyu Kooplong</p>
+        </div>
+    </div>
 </body>
 </html>
