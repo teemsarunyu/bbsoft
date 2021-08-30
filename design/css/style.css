@@ -28,8 +28,8 @@ h3 {
 }
 
 body {
-  background-color: #F3F4F9;
-  font-family: 'Kanit', sans-serif;
+  background-color: #f3f4f9;
+  font-family: "Kanit", sans-serif;
   padding-bottom: 50px;
 }
 
@@ -46,7 +46,7 @@ nav .navbar-brand .bb {
 nav .navbar-brand .soft {
   font-size: 32px;
   font-weight: 700;
-  color: #FF5656;
+  color: #ff5656;
 }
 
 nav ul.navbar-nav li.nav-item {
@@ -151,7 +151,7 @@ nav ul.navbar-nav li.nav-item .nav-link {
 .card.product .text-product-stock {
   color: #FF9900;
   display: inline-block;
-  margin-left: 8px;
+  margin: 8px;
 }
 
 .card.product .text-caim {
@@ -182,6 +182,36 @@ nav ul.navbar-nav li.nav-item .nav-link {
 
 .card.repair-list .table-repair-list {
   font-size: 12px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.card.repair-list .table-repair-list td {
+  overflow: visible;
+}
+
+.card.repair-list .table-repair-list td.time {
+  width: 100px;
+}
+
+.card.repair-list .table-repair-list td.name {
+  width: 150px;
+}
+
+.card.repair-list .table-repair-list td.model {
+  width: 150px;
+}
+
+.card.repair-list .table-repair-list td.detail {
+  width: 150px;
+}
+
+.card.repair-list .table-repair-list td.status {
+  width: 120px;
+}
+
+.card.repair-list .table-repair-list td.pricr {
+  width: 100px;
 }
 
 .card.repair-list .table-repair-list .repair-time {
@@ -214,15 +244,42 @@ nav ul.navbar-nav li.nav-item .nav-link {
   overflow-x: auto;
 }
 
-.card.history-management .table-history-list td {
-  border-collapse: collapse;
-}
-
 .card.history-management .management-time {
   color: #00A3FF;
 }
 
 .card.history-management .management-stock {
   color: #00A3FF;
+}
+
+@media only screen and (max-device-width: 375px) {
+  .username {
+    z-index: 9999999;
+  }
+  .table-repair-list {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table-repair-list td {
+    width: 100px;
+  }
+  .table-repair-list p {
+    font-size: 12px;
+  }
+  .table-repair-list td.fix-left {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+  }
+  .table-history-list {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table-history-list td {
+    width: 100px;
+  }
+  .table-history-list p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

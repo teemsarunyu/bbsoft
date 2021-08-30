@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container d-flex justify-content-between">
             <a class="navbar-brand" href="#"><span class="bb">BB</span><span class="soft">SOFT</span></a>
             <div class="collapse navbar-collapse ms-1" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -42,24 +42,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">จัดการข้อมูลพนักงาน</a>
                     </li>
+                    <div class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle username" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">ศรัญญู คูณปล้อง
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#"><span class="badge bg-success">แอดมิน</span></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">โปรไฟล์</a></li>
+                                <li><a class="dropdown-item" href="#">ประวัติการทำงาน</a></li>
+                                <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
                 </ul>
-            </div>
-            <div class="d-flex">
-                <div class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                            aria-expanded="false" href="#">ศรัญญู คูณปล้อง
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="overflow-y: -100px;">
-                            <li>
-                                <a class="dropdown-item" href="#"><span class="badge bg-success">แอดมิน</span></a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">โปรไฟล์</a></li>
-                            <li><a class="dropdown-item" href="#">ประวัติการทำงาน</a></li>
-                            <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
-                        </ul>
-                    </li>
-                </div>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -199,26 +198,26 @@
                                                         justify-content-between
                                                         align-items-center" style="border-bottom:
                                                         1px solid #dfdfdf">
-                                                    <td>
+                                                    <td class=" time">
                                                         <p>2021-01-01</p>
                                                         <p class="repair-time">10:00</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="name fix-left ">
                                                         <p>คุณสมชาย</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="model">
                                                         <p>iPad Pro</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="detail">
                                                         <p>เปิดไม่ติด</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="status">
                                                         <p class="repair-status">กำลังดำเนินการ</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="price">
                                                         <p class="repair-appraise">4500</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="col"> 
                                                         <i class="fas
                                                                 fa-chevron-down"></i>
                                                     </td>
@@ -227,113 +226,31 @@
                                                         justify-content-between
                                                         align-items-center" style="border-bottom:
                                                         1px solid #dfdfdf">
-                                                    <td>
+                                                    <td class=" time">
                                                         <p>2021-01-01</p>
                                                         <p class="repair-time">10:00</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="name fix-left ">
                                                         <p>คุณสมชาย</p>
                                                     </td>
-                                                    <td>
-                                                        <p>iPad Pro</p>
+                                                    <td class="model">
+                                                        <p>iPad Pro 2021 12.9 นิ้ว</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="detail">
                                                         <p>เปิดไม่ติด</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="status">
                                                         <p class="repair-status">กำลังดำเนินการ</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="price">
                                                         <p class="repair-appraise">4500</p>
                                                     </td>
-                                                    <td>
+                                                    <td class="col"> 
                                                         <i class="fas
                                                                 fa-chevron-down"></i>
                                                     </td>
                                                 </tr>
-                                                <tr align="center" class="d-flex
-                                                        justify-content-between
-                                                        align-items-center" style="border-bottom:
-                                                        1px solid #dfdfdf">
-                                                    <td>
-                                                        <p>2021-01-01</p>
-                                                        <p class="repair-time">10:00</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>คุณสมชาย</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>iPad Pro</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>เปิดไม่ติด</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-status">กำลังดำเนินการ</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-appraise">4500</p>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fas
-                                                                fa-chevron-down"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr align="center" class="d-flex
-                                                        justify-content-between
-                                                        align-items-center" style="border-bottom:
-                                                        1px solid #dfdfdf">
-                                                    <td>
-                                                        <p>2021-01-01</p>
-                                                        <p class="repair-time">10:00</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>คุณสมชาย</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>iPad Pro</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>เปิดไม่ติด</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-status">กำลังดำเนินการ</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-appraise">4500</p>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fas
-                                                                fa-chevron-down"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr align="center" class="d-flex
-                                                        justify-content-between
-                                                        align-items-center" style="border-bottom:
-                                                        1px solid #dfdfdf">
-                                                    <td>
-                                                        <p>2021-01-01</p>
-                                                        <p class="repair-time">10:00</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>คุณสมชาย</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>iPad Pro</p>
-                                                    </td>
-                                                    <td>
-                                                        <p>เปิดไม่ติด</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-status">กำลังดำเนินการ</p>
-                                                    </td>
-                                                    <td>
-                                                        <p class="repair-appraise">4500</p>
-                                                    </td>
-                                                    <td>
-                                                        <i class="fas
-                                                                fa-chevron-down"></i>
-                                                    </td>
+
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -545,65 +462,49 @@
                                                     href="#multiCollapseExample1" role="button" aria-expanded="false"
                                                     aria-controls="multiCollapseExample1"></i>
                                             </td>
-                                    <tbody class="collapse
-                                                    multi-collapse" id="multiCollapseExample1">
-                                        <td>
-                                            Lorem ipsum dolor sit
-                                            amet consectetur
-                                            adipisicing
-                                            elit. Vero voluptatem
-                                            animi ad. Possimus
-                                            magnam
-                                            nobis sapiente
-                                            distinctio in, pariatur
-                                            ut ex cum
-                                            quia doloremque dicta,
-                                            nulla aperiam debitis
-                                            delectus at!
-                                        </td>
-                                    </tbody>
-                                    </tr>
-                                    <tr class="d-flex
+                                        </tr>
+                                        <tr class="d-flex
                                                 justify-content-between
                                                 align-items-center
                                                 text-center" style="border-bottom:
                                                 1px solid #dfdfdf">
-                                        <td>
-                                            <p>2021-01-01</p>
-                                            <p class="management-time">10:00</p>
-                                        </td>
-                                        <td>
-                                            <p>#INV0001</p>
-                                        </td>
-                                        <td>
-                                            <p>ออกใบเสร็จ</p>
-                                        </td>
-                                        <td>
-                                            <p>แอดมิน</p>
-                                        </td>
-                                        <td>
-                                            <p class="management-stock">สำนักงานใหญ่</p>
-                                        </td>
-                                        <td>
-                                            <i class="fas
-                                                        fa-chevron-down" data-bs-toggle="collapse"
-                                                href="#multiCollapseExample2" role="button" aria-expanded="false"
-                                                aria-controls="multiCollapseExample1"></i>
-                                        </td>
-                                        <tbody class="collapse
-                                                    multi-collapse" id="multiCollapseExample2">
                                             <td>
-                                                <p>ราบละเอียด :</p>
-                                                <p>ราบละเอียด :</p>
-                                                <p>ราบละเอียด :</p>
-                                                <p>ราบละเอียด :</p>
+                                                <p>2021-01-01</p>
+                                                <p class="management-time">10:00</p>
                                             </td>
-                                        </tbody>
+                                            <td>
+                                                <p>#INV0001</p>
+                                            </td>
+                                            <td>
+                                                <p>ออกใบเสร็จ</p>
+                                            </td>
+                                            <td>
+                                                <p>แอดมิน</p>
+                                            </td>
+                                            <td>
+                                                <p class="management-stock">สำนักงานใหญ่</p>
+                                            </td>
+                                            <td>
+                                                <i class="fas
+                                                        fa-chevron-down" data-bs-toggle="collapse"
+                                                    href="#multiCollapseExample" role="button" aria-expanded="false"
+                                                    aria-controls="multiCollapseExample1"></i>
+                                            </td>
+                                    <tbody class="collapse
+                                                    multi-collapse" id="multiCollapseExample">
+                                        <td>
+                                            <p>ราบละเอียด :</p>
+                                            <p>ราบละเอียด :</p>
+                                            <p>ราบละเอียด :</p>
+                                            <p>ราบละเอียด :</p>
+                                        </td>
+                                    </tbody>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="#" class="more d-flex justify-content-center
+                            <a href="#" class="more d-flex
+                                    justify-content-center
                                     align-items-center">ดูทั้งหมด<i class="fas
                                         fa-arrow-right ms-2"></i></a>
                         </div>
@@ -617,6 +518,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
