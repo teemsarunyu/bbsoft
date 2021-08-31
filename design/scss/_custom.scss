@@ -10,6 +10,7 @@ body {
     padding-bottom: 50px;
 }
 nav {
+    position: relative;
     .navbar-brand {
         margin-right: 30px;
         .bb {
@@ -30,10 +31,18 @@ nav {
                 font-size: 14px;
             }
         }
+        li.nav-item .user {
+            position: absolute;
+            right: 0;
+        }
     }
 }
+
 .title-page {
     font-size: 36px;
+}
+.card-line {
+    width: 80%;
 }
 .card {
     border: none;
@@ -70,6 +79,7 @@ nav {
             color: $red;
             display: inline-block;
             margin-left: 8px;
+            font-size: 16px;
         }
     }
     &.repair {
@@ -93,6 +103,7 @@ nav {
             color: $red;
             display: inline-block;
             margin-left: 8px;
+            font-size: 16px;
         }
     }
 
@@ -140,9 +151,8 @@ nav {
             font-size: 12px;
             overflow-x: auto;
             text-align: center;
-            td {
-                overflow: visible;
-            }
+           
+           
             td.time {
                 width: 100px;
             }
@@ -151,6 +161,13 @@ nav {
             }
             td.model {
                 width: 150px;
+                height: 75px;
+                overflow: clip;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             td.detail {
                 width: 150px;
@@ -202,6 +219,9 @@ nav {
     .username {
         //   display: none;
         z-index: 9999999;
+    }
+    hr.card-line {
+        width: 100%;
     }
     .table-repair-list {
         width: 100%;
