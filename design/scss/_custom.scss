@@ -25,12 +25,16 @@ nav {
     }
     ul.navbar-nav {
         li.nav-item {
-            margin-right: 10px;
             .nav-link {
                 font-size: 14px;
             }
         }
     }
+    li.username {
+      display: flex;
+      justify-content: end;
+    }
+
 }
 .title-page {
     font-size: 36px;
@@ -162,8 +166,6 @@ nav {
                 width: 100px;
             }
           
-          
-          
             .repair-time {
                 color: $green;
             }
@@ -199,10 +201,6 @@ nav {
 }
 
 @media only screen and (max-device-width: 375px) {
-    .username {
-        //   display: none;
-        z-index: 9999999;
-    }
     .table-repair-list {
         width: 100%;
         overflow-x: auto;
