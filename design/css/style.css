@@ -33,6 +33,10 @@ body {
   padding-bottom: 50px;
 }
 
+nav {
+  position: relative;
+}
+
 nav .navbar-brand {
   margin-right: 30px;
 }
@@ -57,8 +61,17 @@ nav ul.navbar-nav li.nav-item .nav-link {
   font-size: 14px;
 }
 
+nav ul.navbar-nav li.nav-item .user {
+  position: absolute;
+  right: 0;
+}
+
 .title-page {
   font-size: 36px;
+}
+
+.card-line {
+  width: 80%;
 }
 
 .card {
@@ -106,6 +119,7 @@ nav ul.navbar-nav li.nav-item .nav-link {
   color: #FF5656;
   display: inline-block;
   margin-left: 8px;
+  font-size: 16px;
 }
 
 .card.repair {
@@ -134,6 +148,7 @@ nav ul.navbar-nav li.nav-item .nav-link {
   color: #FF5656;
   display: inline-block;
   margin-left: 8px;
+  font-size: 16px;
 }
 
 .card.product .text-product-almost {
@@ -186,10 +201,6 @@ nav ul.navbar-nav li.nav-item .nav-link {
   text-align: center;
 }
 
-.card.repair-list .table-repair-list td {
-  overflow: visible;
-}
-
 .card.repair-list .table-repair-list td.time {
   width: 100px;
 }
@@ -200,6 +211,13 @@ nav ul.navbar-nav li.nav-item .nav-link {
 
 .card.repair-list .table-repair-list td.model {
   width: 150px;
+  height: 75px;
+  overflow: clip;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card.repair-list .table-repair-list td.detail {
@@ -255,6 +273,9 @@ nav ul.navbar-nav li.nav-item .nav-link {
 @media only screen and (max-device-width: 375px) {
   .username {
     z-index: 9999999;
+  }
+  hr.card-line {
+    width: 100%;
   }
   .table-repair-list {
     width: 100%;
