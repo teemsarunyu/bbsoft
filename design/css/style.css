@@ -53,10 +53,6 @@ nav .navbar-brand .soft {
   color: #ff5656;
 }
 
-nav ul.navbar-nav li.nav-item {
-  margin-right: 10px;
-}
-
 nav ul.navbar-nav li.nav-item .nav-link {
   font-size: 14px;
 }
@@ -64,6 +60,11 @@ nav ul.navbar-nav li.nav-item .nav-link {
 nav ul.navbar-nav li.nav-item .user {
   position: absolute;
   right: 0;
+}
+
+nav li.username {
+  display: flex;
+  justify-content: end;
 }
 
 .title-page {
@@ -271,12 +272,6 @@ nav ul.navbar-nav li.nav-item .user {
 }
 
 @media only screen and (max-device-width: 375px) {
-  .username {
-    z-index: 9999999;
-  }
-  hr.card-line {
-    width: 100%;
-  }
   .table-repair-list {
     width: 100%;
     overflow-x: auto;
